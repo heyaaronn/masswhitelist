@@ -1,0 +1,20 @@
+# MassWhitelist configuration
+#
+# Run "/masswhitelist config" (or "/mwl config") in-game or from console to add
+# every name in the list below to the whitelist.
+
+# When true, each username is checked against Mojang before being added. Names
+# that do not belong to a real Minecraft (Java) account are skipped and written
+# to a report file. Set this to false ONLY if your server runs in offline mode
+# (online-mode=false in server.properties); offline mode cannot verify names.
+verify-with-mojang: true
+
+# Reload the live whitelist after adding so changes take effect without a restart.
+reload-whitelist-after: true
+
+# The list of players to whitelist when you run "/masswhitelist config".
+# Paste as many as you want, one per line, each starting with "- ".
+players:
+  - Notch
+  - jeb_
+  # - SomePlayerThatDoesNotExist123   # <- a bad name like this would be skipped and reported

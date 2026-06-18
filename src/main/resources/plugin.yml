@@ -1,0 +1,17 @@
+name: MassWhitelist
+version: 1.0.0
+main: com.example.masswhitelist.MassWhitelistPlugin
+api-version: '1.21'
+author: YourName
+description: Bulk-add players to the whitelist from a command or a config list, with a report of any usernames that fail.
+
+commands:
+  masswhitelist:
+    description: Mass whitelist management.
+    usage: "/masswhitelist <add <names...> | config | reload>"
+    aliases: [mwl]
+
+permissions:
+  masswhitelist.use:
+    description: Allows using the mass whitelist command.
+    default: op
